@@ -225,7 +225,7 @@
             </summary>
             <param name="Client"></param>
         </member>
-        <member name="M:GTANetworkMethods.ACL.LoginPlayer(GTANetworkAPI.Client,System.String)">
+        <member name="M:GTANetworkMethods.ACL.LoginPlayer(GTANetworkAPI.Client, System.String)">
             <summary>
             Attempts to login in given Client with the given Password, returns LoginResult enum with the result of the login.
             </summary>
