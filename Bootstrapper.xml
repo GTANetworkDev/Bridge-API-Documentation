@@ -535,5 +535,364 @@
             <param name="marker">The Checkpoint.</param>         
             <param name="scale">The Scale of the Checkpoint.</param>    
         </member>
+
+        <!-- Entity -->
+        <member name="T:GTANetworkAPI.Entity">
+            <summary>
+                The Entity class.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Collisionless">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Entity"/> should have no-collision or not.
+            </summary>
+            <returns>Boolean lol</returns>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Dimension">
+            <summary>
+                Gets or sets the Dimension this <see cref="GTANetworkAPI.Entity"/> is in.
+                This also determines who this <see cref="GTANetworkAPI.Entity"/> is visible to.
+                <para />
+                <para />
+                Example: <para />
+                Players in Dimension <c>0</c> can only see an <see cref="GTANetworkAPI.Entity"/> when it is in Dimension <c>0</c>.
+                Entities that are in Dimension <c>1</c> are not visible to these Players.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Exists">
+            <summary>
+                Gets a value indicating whether this <see cref="GTANetworkAPI.Entity"/> exists or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.FreezePosition">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Entity"/>'s position is frozen or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Handle">
+            <summary>
+                Gets the <see cref="GTANetworkAPI.NetHandle"/> of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Heading">
+            <summary>
+                Gets or sets the heading of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Invincible">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Entity"/> is invincible or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.IsNull">
+            <summary>
+                Gets a value which indicates whether this instance of <see cref="GTANetworkAPI.Entity"/> is equal to <c>null</c> or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Model">
+            <summary>
+                Gets the model of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Position">
+            <summary>
+                Gets or sets the position of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Rotation">
+            <summary>
+                Gets or sets the rotation of this <see cref="GTANetworkAPI.Entity"/>.
+                <para/>
+                <para/>
+                Helpful info:<para/>
+                X = Pitch<para/>
+                Y = Roll<para/>
+                Z = Yaw
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Transparency">
+            <summary>
+                Gets or sets the transparency of this <see cref="GTANetworkAPI.Entity"/>.
+                <para/>
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Type">
+            <summary>
+                Gets the type of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Value">
+            <summary>
+
+            </summary>
+        </member>
+
+        <!-- Blip -->
+        <member name="T:GTANetworkAPI.Blip">
+            <summary>
+                The Blip class.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Color">
+            <summary>
+                Gets or sets the color of this <see cref="GTANetworkAPI.Blip"/>.<para/>
+                Colors range from 0 - 85. A list of them is available on <a href="https://wiki.rage.mp/index.php?title=Blip::color">the RageMP wiki</a>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Name">
+            <summary>
+                Gets or sets the name of this <see cref="GTANetworkAPI.Blip" /> shown on the in-game map.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.RouteColor">
+            <summary>
+                Gets or sets the route color of this <see cref="GTANetworkAPI.Blip" />.<para/>
+                Colors range from 0 - 85. A list of them is available on <a href="https://wiki.rage.mp/index.php?title=Blip::color">the RageMP wiki</a>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.RouteVisible">
+            <summary>
+                Gets or sets a value indicating whether the route to this <see cref="GTANetworkAPI.Blip" /> should be visible.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Scale">
+            <summary>
+                Gets or sets the scale of this <see cref="GTANetworkAPI.Blip"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.ShortRange">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Blip"/> should only be seen when the player is in close proximity.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Sprite">
+            <summary>
+                Gets or sets the sprite texture of this <see cref="GTANetworkAPI.Blip"/>.<para/>
+                A list of them is available on <a href="https://wiki.rage.mp/index.php?title=Blips#Blip_model">the RageMP wiki</a>.
+            </summary>
+        </member>
+
+        <!-- Vehicles -->
+        <member name="P:GTANetworkAPI.Vehicle.BulletproofTyres">
+            <summary>
+                Gets or sets a value indicating whether the tyres of this <see cref="GTANetworkAPI.Vehicle"/> are bulletproof or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Class">
+            <summary>
+                Gets the class of this <see cref="GTANetworkAPI.Vehicle"/><para />
+                A full list of all vehicle classes can be found on <a href="https://wiki.rage.mp/index.php?title=Vehicle_Classes">the RageMP wiki</a>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.ClassName">
+            <summary>
+                Gets the name of this <see cref="GTANetworkAPI.Vehicle"/>'s class.<para />
+                A full list of all vehicle classes can be found on <a href="https://wiki.rage.mp/index.php?title=Vehicle_Classes">the RageMP wiki</a>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.CustomPrimaryColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s custom primary color.<para />
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.CustomSecondaryColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s custom secondary color.<para />
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.DashboardColor">
+            <summary>
+                Gets or sets the color used on the dashboard of this <see cref="GTANetworkAPI.Vehicle"/>.<para />
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.DisplayName">
+            <summary>
+                Gets this <see cref="GTANetworkAPI.Vehicle"/>'s display name shown in the bottom-right-hand corner of the screen.<para />
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.EnginePowerMultiplier">
+            <summary>
+                Gets or sets the engine's power multiplier of this <see cref="GTANetworkAPI.Vehicle"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.EngineStatus">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Vehicle"/>'s the engine of is turned on or off.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.EngineTorqueMultiplier">
+            <summary>
+                Gets or sets the engine's torque multiplier of this <see cref="GTANetworkAPI.Vehicle"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Health">
+            <summary>
+                Gets or sets the health of this <see cref="GTANetworkAPI.Vehicle"/>.<para/>
+                Values range from:<para/>
+                <c>0</c>: Minimum - Vehicle will be undriveable<para/>
+                <c>1000</c>: Maximum
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Livery">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s livery.<para/>
+                If a <see cref="GTANetworkAPI.Vehicle"/> has no livery set, it will revert to <c>-1</c>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Locked">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Vehicle"/> is locked or unlocked.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.MaxAcceleration">
+            <summary>
+                Gets this <see cref="GTANetworkAPI.Vehicle"/>'s maximum acceleration.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.MaxBraking">
+            <summary>
+                Gets this <see cref="GTANetworkAPI.Vehicle"/>'s maximum braking power.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.MaxOccupants">
+            <summary>
+                Gets this <see cref="GTANetworkAPI.Vehicle"/>'s maximum number of occupants.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.MaxPassengers">
+            <summary>
+                Gets this <see cref="GTANetworkAPI.Vehicle"/>'s maximum number of passengers.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.MaxSpeed">
+            <summary>
+                Gets this <see cref="GTANetworkAPI.Vehicle"/>'s maximum acceleration.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.NeonColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s neon light colors.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Neons">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Vehicle"/>'s neon lights are turned on or off.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.NumberPlate">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s number plate.<para/>
+                The maximum <see cref="string"/> length that can be shown is <c>8</c> characters.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.NumberPlateStyle">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s number plate style.<para/>
+                <para/>
+                A list of all available styles:<para/>
+                <c>0</c>: Blue/White
+                <c>1</c>: Yellow/Black
+                <c>2</c>: Yellow/Blue
+                <c>3</c>: Blue/White 2
+                <c>4</c>: Blue/White 3
+                <c>5</c>: North Yankton
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Occupants">
+            <summary>
+                Gets the list of all occupants inside of this <see cref="GTANetworkAPI.Vehicle"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.PearlescentColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s pearlescent color.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.PrimaryColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s primary color.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.PrimaryPaint">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s primary paint.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.SecondaryColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s secondary color.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.SecondaryPaint">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s secondary paint.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Siren">
+            <summary>
+                Gets a value indicating whether this <see cref="GTANetworkAPI.Vehicle"/> has a siren or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.SpecialLight">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Vehicle"/>'s special light is turned on or off.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.Trailer">
+            <summary>
+                Gets this <see cref="GTANetworkAPI.Vehicle"/>'s trailer <see cref="GTANetworkAPI.Vehicle"/>.<para/>
+                If there's no trailer attached, it will return null.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.TraileredBy">
+            <summary>
+                Gets this the <see cref="GTANetworkAPI.Vehicle"/> which this <see cref="GTANetworkAPI.Vehicle"/> is trailered by.<para/>
+                If this <see cref="GTANetworkAPI.Vehicle"/> is not being trailered, it will return null.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.TrimColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s trim color.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.TyreSmokeColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s tyre smoke color.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.WheelColor">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s wheel color.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.WheelType">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s wheel type.<para/>
+                <para/>
+                A list of all available wheel types:<para/>
+                <c>0</c>: Sport
+                <c>1</c>: Muscle
+                <c>2</c>: Lowrider
+                <c>3</c>: SUV
+                <c>4</c>: Offroad
+                <c>5</c>: Tuner
+                <c>6</c>: Bike Wheels
+                <c>7</c>: High End
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Vehicle.WindowTint">
+            <summary>
+                Gets or sets this <see cref="GTANetworkAPI.Vehicle"/>'s window tint.<para/>
+                <para/>
+                A list of all available window tints:<para/>
+                <c>0</c>: None
+                <c>1</c>: Pure Black
+                <c>2</c>: Dark Smoke
+                <c>3</c>: Light Smoke
+                <c>4</c>: Stock
+                <c>5</c>: Limo
+                <c>6</c>: Green
+            </summary>
+        </member>
     </members>
 </doc>
