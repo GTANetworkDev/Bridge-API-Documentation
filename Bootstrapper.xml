@@ -535,6 +535,22 @@
             <param name="marker">The Checkpoint.</param>         
             <param name="scale">The Scale of the Checkpoint.</param>    
         </member>
+        <member name="P:GTANetworkAPI.Checkpoint.Color">
+            <summary>
+                Gets or sets the color of this <see cref="GTANetworkAPI.Checkpoint"/>.<para/>
+                Color must be of <see cref="GTANetworkAPI.Color"/> type.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Checkpoint.Direction">
+            <summary>
+                Gets or sets the direction of this <see cref="GTANetworkAPI.Checkpoint"/> is pointing at.<para/>
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Checkpoint.Scale">
+            <summary>
+                Gets or sets the scale of this <see cref="GTANetworkAPI.Checkpoint"/>.<para/>
+            </summary>
+        </member>
 
         <!-- Entity -->
         <member name="T:GTANetworkAPI.Entity">
@@ -892,6 +908,78 @@
                 <c>4</c>: Stock
                 <c>5</c>: Limo
                 <c>6</c>: Green
+            </summary>
+        </member>
+		
+		<!-- Marker -->
+        <member name="T:GTANetworkAPI.Marker">
+            <summary>
+                The Marker class.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Marker.Direction">
+            <summary>
+                Gets or sets the direction of this <see cref="GTANetworkAPI.Marker"/> is pointing at.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Marker.MarkerType">
+            <summary>
+                Gets or sets the marker type of this <see cref="GTANetworkAPI.Marker"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Marker.Scale">
+            <summary>
+                Gets or sets the scale of this <see cref="GTANetworkAPI.Marker"/>.
+            </summary>
+        </member>
+		
+		<!-- Pickup -->
+        <member name="T:GTANetworkAPI.Pickup">
+            <summary>
+                The Pickup class.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Pickup.Amount">
+            <summary>
+                Returns the amount of this <see cref="GTANetworkAPI.Pickup"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Pickup.CustomModel">
+            <summary>
+                Returns the custom model of this <see cref="GTANetworkAPI.Pickup"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Pickup.PickedUp">
+            <summary>
+                Returns whether this <see cref="GTANetworkAPI.Pickup"/> has been picked up or not.
+            </summary>
+        </member>
+		
+		<!-- TextLabel -->
+        <member name="T:GTANetworkAPI.TextLabel">
+            <summary>
+                The TextLabel class.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.TextLabel.Color">
+            <summary>
+                Gets or sets the color of this <see cref="GTANetworkAPI.TextLabel"/>.<para/>
+                Color must be of <see cref="GTANetworkAPI.Color"/> type.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.TextLabel.Range">
+            <summary>
+                Gets or sets the sight range of this <see cref="GTANetworkAPI.TextLabel"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.TextLabel.Seethrough">
+            <summary>
+                Gets or sets whether this <see cref="GTANetworkAPI.TextLabel"/> can be seen through walls.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.TextLabel.Text">
+            <summary>
+                Gets or sets the text of this <see cref="GTANetworkAPI.TextLabel"/>.
             </summary>
         </member>
     </members>
