@@ -444,7 +444,7 @@
         </member>
         <member name="M:GTANetworkMethods.Chat.SendChatMessageToPlayer(GTANetworkAPI.Client,System.String,System.Boolean)">
             <summary>
-            Sends a chat message to the given Client
+            Sends a chat message to the given Client.
             </summary>
             <param name="player">The Player the Message will be sent to.</param>
             <param name="message">The Message.</param>
