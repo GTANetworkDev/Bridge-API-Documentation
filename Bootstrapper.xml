@@ -426,5 +426,114 @@
             <param name="blip">The Blip.</param>
             <param name="alpha">The Transparency of the Blip.</param>
         </member>
+        <!-- Chat -->
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToAll(System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to every player in the server.
+            </summary>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToAll(System.String,System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to every player in the server, with the name of a sender.
+            </summary>
+            <param name="sender">The Sender of the Message.</param>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToPlayer(GTANetworkAPI.Client,System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to the given Client
+            </summary>
+            <param name="player">The Player the Message will be sent to.</param>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToAll(GTANetworkAPI.Client,System.String,System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to the given Client, with the name of a sender.
+            </summary>
+            <param name="player">The Player the Message will be sent to.</param>
+            <param name="sender">The Sender of the Message.</param>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <!-- Checkpoints -->
+        <member name="M:GTANetworkMethods.Checkpoint.CreateCheckpoint(GTANetworkAPI.CheckpointType,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.UInt32)">
+            <summary>
+            Creates a checkpoint with the given CheckpointType, Vector3 for the position, Vector3 for the direction, float for the scale, and Color for the color.
+            </summary>
+            <param name="model">The Checkpoint's model.</param>
+            <param name="pos">The Position of the Checkpoint.</param>
+            <param name="dir">The Direction of the Checkpoint.</param>
+            <param name="scale">The Scale of the Checkpoint.</param>
+            <param name="color">The Color of the Checkpoint.</param>            
+            <param name="dimension">Optional, defaults to the Global Dimension.</param>            
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.CreateCheckpoint(System.UInt32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.UInt32)">
+            <summary>
+            Creates a checkpoint with the given the uint for the model, Vector3 for the position, Vector3 for the direction, float for the scale, and Color for the color.
+            </summary>
+            <param name="model">The Checkpoint's model.</param>
+            <param name="pos">The Position of the Checkpoint.</param>
+            <param name="dir">The Direction of the Checkpoint.</param>
+            <param name="scale">The Scale of the Checkpoint.</param>
+            <param name="color">The Color of the Checkpoint.</param>            
+            <param name="dimension">Optional, defaults to the Global Dimension.</param>            
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.CreateCheckpoint(System.Int32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.UInt32)">
+            <summary>
+            Creates a checkpoint with the given the int for the model, Vector3 for the position, Vector3 for the direction, float for the scale, and Color for the color.
+            </summary>
+            <param name="model">The Checkpoint's model.</param>
+            <param name="pos">The Position of the Checkpoint.</param>
+            <param name="dir">The Direction of the Checkpoint.</param>
+            <param name="scale">The Scale of the Checkpoint.</param>
+            <param name="color">The Color of the Checkpoint.</param>            
+            <param name="dimension">Optional, defaults to the Global Dimension.</param>            
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.GetCheckpointColor(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Checkpoint's Color and returns it as a Color.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.GetCheckpointDirection(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Checkpoint's Direction and returns it as a Vector3.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.GetCheckpointScale(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Checkpoint's Scale and returns it as a float.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+        </member>         
+        <member name="M:GTANetworkMethods.Checkpoint.SetCheckpointColor(GTANetworkAPI.NetHandle,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the given Checkpoint's Color with the int for alpha, int for red, int for green, int for blue.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+            <param name="alpha">The Alpha/Transparency.</param>         
+            <param name="red">The Red.</param>         
+            <param name="green">The Green Color.</param>         
+            <param name="blue">The Blue Color.</param>         
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.SetCheckpointDirection(GTANetworkAPI.NetHandle,GTANetworkAPI.Vector3)">
+            <summary>
+            Sets the given Checkpoint's Direction with the "dir" parameter as the Direction.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+            <param name="dir">The Direction of the Checkpoint.</param>    
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.SetCheckpointScale(GTANetworkAPI.NetHandle,System.Single)">
+            <summary>
+            Sets the given Checkpoint's Scale with the float as the Scale.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+            <param name="scale">The Scale of the Checkpoint.</param>    
+        </member>
     </members>
 </doc>
