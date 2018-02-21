@@ -200,5 +200,340 @@
             <param name="task"></param>
             <param name="delayTime">should be in ms (milliseconds)</param>
         </member>
+        <!-- ACL -->
+        <member name="M:GTANetworkMethods.ACL.DoesPlayerHaveAccessToCommand(GTANetworkAPI.Client,System.String)">
+            <summary>
+            Returns a boolean depending on if the given Client has access to the given Command.
+            </summary>
+            <param name="Client"></param>
+            <param name="Command"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.GetPlayerAclGroup(GTANetworkAPI.Client)">
+            <summary>
+            Returns a string with the given Client's ACL group.
+            </summary>
+            <param name="Client"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.IsAclEnabled()">
+            <summary>
+            Returns a boolean depending on if ACL is enabled on the current server.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.IsPlayerLoggedIn(GTANetworkAPI.Client)">
+            <summary>
+            Returns a boolean depending on if given Client is logged in to ACL.
+            </summary>
+            <param name="Client"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.LoginPlayer(GTANetworkAPI.Client,System.String)">
+            <summary>
+            Attempts to login in given Client with the given Password, returns LoginResult enum with the result of the login.
+            </summary>
+            <param name="Client"></param>
+            <param name="Password"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.Logoutlayer(GTANetworkAPI.Client)">
+            <summary>
+            Logs out the given Client, this method is void meaning it returns nothing.
+            </summary>
+            <param name="Client"></param>
+        </member>
+        <!-- Blips -->
+        <member name="M:GTANetworkMethods.Blip.CreateBlip(GTANetworkAPI.NetHandle)">
+            <summary>
+            Creates blip with the given NetHandle.
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.CreateBlip(GTANetworkAPI.Vector3,System.UInt32)">
+            <summary>
+            Creates blip with the given Vector3. Uses the default parameters.
+            </summary>
+            <param name="pos">The position of the blip.</param>
+            <param name="Dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.CreateBlip(GTANetworkAPI.Vector3,System.Single,System.UInt32)">
+            <summary>
+            Creates blip with the given Vector3, and Range. Uses the default parameters.
+            </summary>
+            <param name="pos">The position of the blip.</param>
+            <param name="range">The distance the blip can be seen.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.CreateBlip(System.UInt32,GTANetworkAPI.Vector3,System.Single,System.Byte,System.String,System.Byte,System.Single,System.Boolean,System.Int16,System.UInt32)">
+            <summary>
+            Creates blip with the given Sprite, Vector3, Scale, and Color.
+            </summary>
+            <param name="sprite">The sprite/image of the blip.</param>
+            <param name="position">The position of the blip.</param>
+            <param name="scale">The scale of the blip.</param>
+            <param name="color">The color of the blip.</param>
+            <param name="name">Optional, defaults to "".</param>
+            <param name="alpha">Optional, defaults to 255.</param>
+            <param name="drawDistance">Optional, defaults to 0.</param>
+            <param name="shortRange">Optional, defaults to false.</param>
+            <param name="rotation">Optional, defaults to 0.</param>
+            <param name="Dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.CreateBlip(System.Int32,GTANetworkAPI.Vector3,System.Single,System.Byte,System.String,System.Byte,System.Single,System.Boolean,System.Int16,System.UInt32)">
+            <summary>
+            Creates blip with the given Sprite, Vector3, Scale, and Color.
+            </summary>
+            <param name="sprite">The sprite/image of the blip.</param>
+            <param name="position">The position of the blip.</param>
+            <param name="scale">The scale of the blip.</param>
+            <param name="color">The color of the blip.</param>
+            <param name="name">Optional, defaults to "".</param>
+            <param name="alpha">Optional, defaults to 255.</param>
+            <param name="drawDistance">Optional, defaults to 0.</param>
+            <param name="shortRange">Optional, defaults to false.</param>
+            <param name="rotation">Optional, defaults to 0.</param>
+            <param name="Dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipColor(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's color and returns it as a int.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipColor(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's color and returns it as a int.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipName(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's name and returns it as a string.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipPosition(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's position and returns it as a Vector3.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipRouteColor(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's Route Color and returns it as a int.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipRouteVisible(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's current route visibility and returns it as a bool.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipScale(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's scale and returns it as a float.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipShortRange(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's short range and returns it as a bool.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipSprite(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's sprite and returns it as a uint.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipTransparency(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's current transparency and returns it as a int.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.GetBlipTransparency(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Blip's current transparency and returns it as a int.
+            </summary>
+            <param name="blip">The Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipColor(GTANetworkAPI.NetHandle,System.Int32)">
+            <summary>
+            Sets the given Blip's color based on the int you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="color">The Color of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipName(GTANetworkAPI.NetHandle,System.String)">
+            <summary>
+            Sets the given Blip's name based on the string you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="name">The Name of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipPosition(GTANetworkAPI.NetHandle,GTANetworkAPI.Vector3)">
+            <summary>
+            Sets the given Blip's position based on the Vector3 you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="newPos">The Position of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipRouteColor(GTANetworkAPI.NetHandle,System.Int32)">
+            <summary>
+            Sets the given Blip's route color based on the int you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="color">The Route Color of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipRouteVisible(GTANetworkAPI.NetHandle,System.Boolean)">
+            <summary>
+            Sets the given Blip's visiblity based on the bool you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="visible">The Visiblity of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipScale(GTANetworkAPI.NetHandle,System.Single)">
+            <summary>
+            Sets the given Blip's scale based on the float you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="scale">The Scale of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipShortRange(GTANetworkAPI.NetHandle,System.Boolean)">
+            <summary>
+            Sets the given Blip's short range based on the bool you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="range">The Short Range of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipSprite(GTANetworkAPI.NetHandle,System.Int32)">
+            <summary>
+            Sets the given Blip's sprite based on the int you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="sprite">The Sprite of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipSprite(GTANetworkAPI.NetHandle,System.UInt32)">
+            <summary>
+            Sets the given Blip's sprite based on the uint you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="sprite">The Sprite of the Blip.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Blip.SetBlipTransparency(GTANetworkAPI.NetHandle,System.Int32)">
+            <summary>
+            Sets the given Blip's transparency based on the int you pass in.
+            </summary>
+            <param name="blip">The Blip.</param>
+            <param name="alpha">The Transparency of the Blip.</param>
+        </member>
+        <!-- Chat -->
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToAll(System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to every player in the server.
+            </summary>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToAll(System.String,System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to every player in the server, with the name of a sender.
+            </summary>
+            <param name="sender">The Sender of the Message.</param>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToPlayer(GTANetworkAPI.Client,System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to the given Client.
+            </summary>
+            <param name="player">The Player the Message will be sent to.</param>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Chat.SendChatMessageToAll(GTANetworkAPI.Client,System.String,System.String,System.Boolean)">
+            <summary>
+            Sends a chat message to the given Client, with the name of a sender.
+            </summary>
+            <param name="player">The Player the Message will be sent to.</param>
+            <param name="sender">The Sender of the Message.</param>
+            <param name="message">The Message.</param>
+            <param name="oldColors">Optional, bool to use the old chat colors.</param>
+        </member>
+        <!-- Checkpoints -->
+        <member name="M:GTANetworkMethods.Checkpoint.CreateCheckpoint(GTANetworkAPI.CheckpointType,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.UInt32)">
+            <summary>
+            Creates a checkpoint with the given CheckpointType, Vector3 for the position, Vector3 for the direction, float for the scale, and Color for the color.
+            </summary>
+            <param name="model">The Checkpoint's model.</param>
+            <param name="pos">The Position of the Checkpoint.</param>
+            <param name="dir">The Direction of the Checkpoint.</param>
+            <param name="scale">The Scale of the Checkpoint.</param>
+            <param name="color">The Color of the Checkpoint.</param>            
+            <param name="dimension">Optional, defaults to the Global Dimension.</param>            
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.CreateCheckpoint(System.UInt32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.UInt32)">
+            <summary>
+            Creates a checkpoint with the given the uint for the model, Vector3 for the position, Vector3 for the direction, float for the scale, and Color for the color.
+            </summary>
+            <param name="model">The Checkpoint's model.</param>
+            <param name="pos">The Position of the Checkpoint.</param>
+            <param name="dir">The Direction of the Checkpoint.</param>
+            <param name="scale">The Scale of the Checkpoint.</param>
+            <param name="color">The Color of the Checkpoint.</param>            
+            <param name="dimension">Optional, defaults to the Global Dimension.</param>            
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.CreateCheckpoint(System.Int32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.UInt32)">
+            <summary>
+            Creates a checkpoint with the given the int for the model, Vector3 for the position, Vector3 for the direction, float for the scale, and Color for the color.
+            </summary>
+            <param name="model">The Checkpoint's model.</param>
+            <param name="pos">The Position of the Checkpoint.</param>
+            <param name="dir">The Direction of the Checkpoint.</param>
+            <param name="scale">The Scale of the Checkpoint.</param>
+            <param name="color">The Color of the Checkpoint.</param>            
+            <param name="dimension">Optional, defaults to the Global Dimension.</param>            
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.GetCheckpointColor(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Checkpoint's Color and returns it as a Color.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.GetCheckpointDirection(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Checkpoint's Direction and returns it as a Vector3.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.GetCheckpointScale(GTANetworkAPI.NetHandle)">
+            <summary>
+            Gets the given Checkpoint's Scale and returns it as a float.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+        </member>         
+        <member name="M:GTANetworkMethods.Checkpoint.SetCheckpointColor(GTANetworkAPI.NetHandle,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the given Checkpoint's Color with the int for alpha, int for red, int for green, int for blue.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+            <param name="alpha">The Alpha/Transparency.</param>         
+            <param name="red">The Red.</param>         
+            <param name="green">The Green Color.</param>         
+            <param name="blue">The Blue Color.</param>         
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.SetCheckpointDirection(GTANetworkAPI.NetHandle,GTANetworkAPI.Vector3)">
+            <summary>
+            Sets the given Checkpoint's Direction with the "dir" parameter as the Direction.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+            <param name="dir">The Direction of the Checkpoint.</param>    
+        </member>
+        <member name="M:GTANetworkMethods.Checkpoint.SetCheckpointScale(GTANetworkAPI.NetHandle,System.Single)">
+            <summary>
+            Sets the given Checkpoint's Scale with the float as the Scale.
+            </summary>
+            <param name="marker">The Checkpoint.</param>         
+            <param name="scale">The Scale of the Checkpoint.</param>    
+        </member>
     </members>
 </doc>
