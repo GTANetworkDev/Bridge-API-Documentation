@@ -982,5 +982,111 @@
                 Gets or sets the text of this <see cref="GTANetworkAPI.TextLabel"/>.
             </summary>
         </member>
+        <member name="M:GTANetworkMethods.TextLabel.CreateTextLabel(System.String,GTANetworkAPI.Vector3,System.Single,System.Single,System.Int32,GTANetworkAPI.Color,System.Boolean,System.UInt32)">
+            <summary>
+				Creates a new TextLabel
+            </summary>
+            <param name="text">Text displayed in the TextLabel.</param>
+            <param name="pos">The position where the TextLabel will be created.</param>
+            <param name="range">The range from where the TextLabel will be seen.</param>
+            <param name="size">The size of the font used.</param>
+            <param name="font">The font used.</param>
+            <param name="color">The color of the displayed message.</param>
+            <param name="entitySeethrough">Optional, whether it should be seen through walls, defaults to false.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.GetTextLabelColor(GTANetworkAPI.NetHandle)">
+            <summary>
+				Gets the color of the TextLabel.
+            </summary>
+            <param name="label">The TextLabel to get the color from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.GetTextLabelRange(GTANetworkAPI.NetHandle)">
+            <summary>
+				Gets the range of the TextLabel.
+            </summary>
+            <param name="label">The TextLabel to get the range from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.GetTextLabelSeethrough(GTANetworkAPI.NetHandle)">
+            <summary>
+				Whether the TextLabel can be seen through walls.
+            </summary>
+            <param name="label">The TextLabel to get the seethrough from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.GetTextLabelText(GTANetworkAPI.NetHandle)">
+            <summary>
+				Gets the text of the TextLabel.
+            </summary>
+            <param name="label">The TextLabel to get the text from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.SetTextLabelColor(GTANetworkAPI.NetHandle,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+				Sets the color of the TextLabel.
+            </summary>
+            <param name="label">The TextLabel to set the color to.</param>
+            <param name="red">The red color number.</param>
+            <param name="green">The green color number.</param>
+            <param name="blue">The blue color number.</param>
+            <param name="alpha">The opacity of the color.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.SetTextLabelRange(GTANetworkAPI.NetHandle,System.Single)">
+            <summary>
+				Sets the range of the TextLabel.
+            </summary>
+            <param name="label">The TextLabel to set the range to.</param>
+            <param name="newRange">The range the TextLabel will be seen from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.SetTextLabelSeethrough(GTANetworkAPI.NetHandle,System.Boolean)">
+            <summary>
+				Sets whether the TextLabel can be seen through walls.
+            </summary>
+            <param name="label">The TextLabel to set the seethrough to.</param>
+            <param name="seethrough">Whether the TextLabel can be seen through walls.</param>
+        </member>
+        <member name="M:GTANetworkMethods.TextLabel.SetTextLabelText(GTANetworkAPI.NetHandle,System.String)">
+            <summary>
+				Sets the text of the TextLabel.
+            </summary>
+            <param name="label">The TextLabel to set the text to.</param>
+            <param name="newText">The new text.</param>
+        </member>
+		
+		<!-- Ped -->
+        <member name="T:GTANetworkAPI.Ped">
+            <summary>
+                The Ped class.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.Ped.ClearPedTasks(GTANetworkAPI.Ped)">
+            <summary>
+				Clears all the tasks assigned to a Ped.
+            </summary>
+            <param name="ped">The Ped.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Ped.CreatePed(GTANetworkAPI.PedHash,GTANetworkAPI.Vector3,System.Single,System.UInt32)">
+            <summary>
+				Creates a new Ped.
+            </summary>
+            <param name="model">The hash defining the Ped's model.</param>
+            <param name="pos">The position where the Ped will be created.</param>
+            <param name="heading">The angle the Ped will be looking to.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Ped.PlayPedAnimation(GTANetworkAPI.Ped,System.Boolean,System.String,System.String)">
+            <summary>
+				Makes the Ped play an animation.
+            </summary>
+            <param name="ped">The Ped playing the animation.</param>
+            <param name="looped">Whether the animation should be played in loop.</param>
+            <param name="dictionary">The library containing the animation.</param>
+            <param name="name">The name of the animation to play.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Ped.PlayPedScenario(GTANetworkAPI.Ped,System.String)">
+            <summary>
+				Makes the Ped play an scenario.
+            </summary>
+            <param name="ped">The Ped playing the scenario.</param>
+            <param name="scenario">The name of the scenario to play.</param>
+        </member>
     </members>
 </doc>
