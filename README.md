@@ -14,22 +14,26 @@ The Members element is a encapslating element that holds all of the members insi
 The Member element is a single method, class, field, and so on. The name attribute determines which memeber it will be doucmenting.
 
 The format for selecting the member you want to doucment is a follows.
+
 ```xml
 <member name="F:GTANetworkAPI.Event.ChatMessage">
   ...
 </member>
 ```
+
 The first character is the type of member you want to doucment, in this example it's "F" which means that you are accessing a Field, here is a list of the members and their Character.
-| Character       | Description         |
-|:------------- |:-------------|
-| **N** | Namespace
-| **T** | Type: class, interface, struct, enum, delegate 
-| **F** | Field 
-| **P** | Property (including indexers or other indexed properties) 
-| **M** | 	Method (including such special methods as constructors, operators, and so forth)     
-| **E** | Event 
-| **!** | Error string
----
+
+
+| Character | Description |
+|--- |---|
+| N | Namespace |
+| T | Type: class, interface, struct, enum, delegate |
+| F | Field |
+| P | Property (including indexers or other indexed properties) |
+| M | Method (including such special methods as constructors, operators, and so forth)  |   
+| E | Event |
+| ! | Error string |
+
 
 After you pick the correct character it's followed by a colon and then the full member's name. For example if I wanted to access the method CreateBlip, I would use this.
 
@@ -95,6 +99,3 @@ This attribute **MUST** match the parameter name in the intellisense dialog. If 
 That "pos" must be exactly the same as the name attribute. Look back at the above code and check to see that the `<param name="pos">` looks exactly like the "pos" in the picture.
 
 ---
-
-
-
