@@ -535,5 +535,96 @@
             <param name="marker">The Checkpoint.</param>         
             <param name="scale">The Scale of the Checkpoint.</param>    
         </member>
+
+        <!-- Entity -->
+        <member name="T:GTANetworkAPI.Entity">
+            <summary>
+                The Entity class.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Collisionless">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Entity"/> should have no-collision or not.
+            </summary>
+            <returns>Boolean lol</returns>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Dimension">
+            <summary>
+                Gets or sets the Dimension this <see cref="GTANetworkAPI.Entity"/> is in.
+                This also determines who this <see cref="GTANetworkAPI.Entity"/> is visible to.
+                <para />
+                <para />
+                Example: <para />
+                Players in Dimension <c>0</c> can only see an <see cref="GTANetworkAPI.Entity"/> when it is in Dimension <c>0</c>.
+                Entities that are in Dimension <c>1</c> are not visible to these Players.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Exists">
+            <summary>
+                Gets a value indicating whether this <see cref="GTANetworkAPI.Entity"/> exists or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.FreezePosition">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Entity"/>'s position is frozen or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Handle">
+            <summary>
+                Gets the <see cref="GTANetworkAPI.NetHandle"/> of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Heading">
+            <summary>
+                Gets or sets the heading of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Invincible">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Entity"/> is invincible or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.IsNull">
+            <summary>
+                Gets a value which indicates whether this instance of <see cref="GTANetworkAPI.Entity"/> is equal to <c>null</c> or not.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Model">
+            <summary>
+                Gets the model of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Position">
+            <summary>
+                Gets or sets the position of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Rotation">
+            <summary>
+                Gets or sets the rotation of this <see cref="GTANetworkAPI.Entity"/>.
+                <para/>
+                <para/>
+                Helpful info:<para/>
+                X = Pitch<para/>
+                Y = Roll<para/>
+                Z = Yaw
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Transparency">
+            <summary>
+                Gets or sets the transparency of this <see cref="GTANetworkAPI.Entity"/>.
+                <para/>
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Type">
+            <summary>
+                Gets the type of this <see cref="GTANetworkAPI.Entity"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Entity.Value">
+            <summary>
+
+            </summary>
+        </member>
     </members>
 </doc>
