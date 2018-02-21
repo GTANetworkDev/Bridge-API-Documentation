@@ -626,5 +626,50 @@
 
             </summary>
         </member>
+
+        <!-- Blip -->
+        <member name="T:GTANetworkAPI.Blip">
+            <summary>
+                The Blip class.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Color">
+            <summary>
+                Gets or sets the color of this <see cref="GTANetworkAPI.Blip"/>.<para/>
+                Colors range from 0 - 85. A list of them is available on <a href="https://wiki.rage.mp/index.php?title=Blip::color">the RageMP wiki</a>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Name">
+            <summary>
+                Gets or sets the name of this <see cref="GTANetworkAPI.Blip" /> shown on the in-game map.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.RouteColor">
+            <summary>
+                Gets or sets the route color of this <see cref="GTANetworkAPI.Blip" />.<para/>
+                Colors range from 0 - 85. A list of them is available on <a href="https://wiki.rage.mp/index.php?title=Blip::color">the RageMP wiki</a>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.RouteVisible">
+            <summary>
+                Gets or sets a value indicating whether the route to this <see cref="GTANetworkAPI.Blip" /> should be visible.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Scale">
+            <summary>
+                Gets or sets the scale of this <see cref="GTANetworkAPI.Blip"/>.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.ShortRange">
+            <summary>
+                Gets or sets a value indicating whether this <see cref="GTANetworkAPI.Blip"/> should only be seen when the player is in close proximity.
+            </summary>
+        </member>
+        <member name="P:GTANetworkAPI.Blip.Sprite">
+            <summary>
+                Gets or sets the sprite texture of this <see cref="GTANetworkAPI.Blip"/>.<para/>
+                A list of them is available on <a href="https://wiki.rage.mp/index.php?title=Blips#Blip_model">the RageMP wiki</a>.
+            </summary>
+        </member>
     </members>
 </doc>
