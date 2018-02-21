@@ -36,7 +36,7 @@
         </member>
         <member name="F:GTANetworkAPI.Event.Update">
             <summary>
-            Event has no parameters. Event is triggered on every server tick.
+            Event has no parameters.
             </summary>
         </member>
         <member name="F:GTANetworkAPI.Event.EntityCreated">
@@ -52,11 +52,6 @@
         <member name="F:GTANetworkAPI.Event.EntityModelChange">
             <summary>
             Event Params: <see cref="T:GTANetworkAPI.NetHandle"/> entity, <see cref="T:System.UInt32"/> oldModel
-            </summary>
-        </member>
-        <member name="F:GTANetworkAPI.Event.PlayerConnect">
-            <summary>
-            Event Params: <see cref="T:GTANetworkAPI.Client"/> client
             </summary>
         </member>
         <member name="F:GTANetworkAPI.Event.PlayerConnected">
@@ -77,6 +72,7 @@
         <member name="F:GTANetworkAPI.Event.PlayerDeath">
             <summary>
             Event Params: <see cref="T:GTANetworkAPI.Client"/> client, <see cref="T:GTANetworkAPI.Client"/> killer, <see cref="T:System.UInt32"/> reason
+            <para>Death reason can be of either <see cref="T:GTANetworkAPI.WeaponHash"/> or <see cref="T:GTANetworkAPI.DeathReason"/></para>
             </summary>
         </member>
         <member name="F:GTANetworkAPI.Event.PlayerDamage">
@@ -179,6 +175,24 @@
             Event Params: <see cref="T:GTANetworkAPI.Vehicle"/> vehicle, <see cref="T:GTANetworkAPI.Vehicle"/> trailer
             </summary>
         </member>
+        <member name="F:GTANetworkAPI.Event.FirstChanceException">
+            <summary>
+            <para>Occurs when an exception is thrown in managed code, before the runtime searches
+            the call stack for an exception handler in the application domain.</para>
+            <para>Event Params: <see cref="T:System.Exception"/> exception</para>
+            </summary>
+        </member>
+        <member name="F:GTANetworkAPI.Event.UnhandledException">
+            <summary>
+            Occurs when an exception is not caught.
+            Event Params: <see cref="T:System.Exception"/> exception
+            </summary>
+        </member>
+        <member name="F:GTANetworkAPI.Event.Invalid">
+            <summary>
+            An invalid event for internal usage
+            </summary>
+        </member>
         <member name="M:GTANetworkMethods.Task.Run(System.Action,System.Int64)">
             <summary>
             Runs thread-safe API code on main thread.
@@ -191,14 +205,14 @@
             <summary>
             Returns a boolean depending on if the given Client has access to the given Command.
             </summary>
-            <param name="player"></param>
-            <param name="cmd"></param>
+            <param name="Client"></param>
+            <param name="Command"></param>
         </member>
         <member name="M:GTANetworkMethods.ACL.GetPlayerAclGroup(GTANetworkAPI.Client)">
             <summary>
             Returns a string with the given Client's ACL group.
             </summary>
-            <param name="player"></param>
+            <param name="Client"></param>
         </member>
         <member name="M:GTANetworkMethods.ACL.IsAclEnabled()">
             <summary>
@@ -209,9 +223,9 @@
             <summary>
             Returns a boolean depending on if given Client is logged in to ACL.
             </summary>
-            <param name="player"></param>
+            <param name="Client"></param>
         </member>
-        <member name="M:GTANetworkMethods.ACL.LoginPlayer(GTANetworkAPI.Client, System.String)">
+        <member name="M:GTANetworkMethods.ACL.LoginPlayer(GTANetworkAPI.Client,System.String)">
             <summary>
             Attempts to login in given Client with the given Password, returns LoginResult enum with the result of the login.
             </summary>
@@ -222,7 +236,7 @@
             <summary>
             Logs out the given Client, this method is void meaning it returns nothing.
             </summary>
-            <param name="player"></param>
+            <param name="Client"></param>
         </member>
         <!-- Blips -->
         <member name="M:GTANetworkMethods.Blip.CreateBlip(GTANetworkAPI.NetHandle)">
