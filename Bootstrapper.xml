@@ -200,5 +200,43 @@
             <param name="task"></param>
             <param name="delayTime">should be in ms (milliseconds)</param>
         </member>
+        <!-- ACL -->
+        <member name="M:GTANetworkMethods.ACL.DoesPlayerHaveAccessToCommand(GTANetworkAPI.Client,System.String)">
+            <summary>
+            Returns a boolean depending on if the given Client has access to the given Command.
+            </summary>
+            <param name="Client"></param>
+            <param name="Command"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.GetPlayerAclGroup(GTANetworkAPI.Client)">
+            <summary>
+            Returns a string with the given Client's ACL group.
+            </summary>
+            <param name="Client"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.IsAclEnabled()">
+            <summary>
+            Returns a boolean depending on if ACL is enabled on the current server.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.IsPlayerLoggedIn(GTANetworkAPI.Client)">
+            <summary>
+            Returns a boolean depending on if given Client is logged in to ACL.
+            </summary>
+            <param name="Client"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.LoginPlayer(GTANetworkAPI.Client, System.String)">
+            <summary>
+            Attempts to login in given Client with the given Password, returns LoginResult enum with the result of the login.
+            </summary>
+            <param name="Client"></param>
+            <param name="Password"></param>
+        </member>
+        <member name="M:GTANetworkMethods.ACL.Logoutlayer(GTANetworkAPI.Client)">
+            <summary>
+            Logs out the given Client, this method is void meaning it returns nothing.
+            </summary>
+            <param name="Client"></param>
+        </member>
     </members>
 </doc>
