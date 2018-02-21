@@ -99,3 +99,9 @@ This attribute **MUST** match the parameter name in the intellisense dialog. If 
 That "pos" must be exactly the same as the name attribute. Look back at the above code and check to see that the `<param name="pos">` looks exactly like the "pos" in the picture.
 
 ---
+
+##### Sources
+
+* [Processing the XML File](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/processing-the-xml-file)
+* [Recommended Tags for Documentation Comments](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments)
+* [XML Tutorial](https://www.w3schools.com/xml/default.asp)
