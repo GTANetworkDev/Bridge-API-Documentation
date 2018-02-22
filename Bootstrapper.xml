@@ -1052,6 +1052,135 @@
                 Gets or sets the scale of this <see cref="GTANetworkAPI.Marker"/>.
             </summary>
         </member>
+        <member name="M:GTANetworkMethods.Marker.CreateMarker(System.Int32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.Boolean,System.UInt32)">
+            <summary>
+                Creates a new Marker.
+            </summary>
+            <param name="markerType">The Marker type to be created.</param>
+            <param name="pos">The position where the Marker will be created.</param>
+            <param name="dir">The direction where the Marker will be pointing to.</param>
+            <param name="rot">The rotation of the Marker.</param>
+            <param name="scale">The size of the Marker.</param>
+            <param name="color">The color of the Marker.</param>
+            <param name="bobUpAndDown">Optional, defaults to false.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.CreateMarker(GTANetworkAPI.MarkerType,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.Boolean,System.UInt32)">
+            <summary>
+                Creates a new Marker.
+            </summary>
+            <param name="markerType">The Marker type to be created.</param>
+            <param name="pos">The position where the Marker will be created.</param>
+            <param name="dir">The direction where the Marker will be pointing to.</param>
+            <param name="rot">The rotation of the Marker.</param>
+            <param name="scale">The size of the Marker.</param>
+            <param name="color">The color of the Marker.</param>
+            <param name="bobUpAndDown">Optional, defaults to false.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.CreateMarker(System.UInt32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.Boolean,System.UInt32)">
+            <summary>
+                Creates a new Marker.
+            </summary>
+            <param name="markerType">The Marker type to be created.</param>
+            <param name="pos">The position where the Marker will be created.</param>
+            <param name="dir">The direction where the Marker will be pointing to.</param>
+            <param name="rot">The rotation of the Marker.</param>
+            <param name="scale">The size of the Marker.</param>
+            <param name="color">The color of the Marker.</param>
+            <param name="bobUpAndDown">Optional, defaults to false.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.CreateMarker(System.Int32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,System.Int32,System.Int32,System.Int32,System.Boolean,System.UInt32)">
+            <summary>
+                Creates a new Marker.
+            </summary>
+            <param name="markerType">The Marker type to be created.</param>
+            <param name="pos">The position where the Marker will be created.</param>
+            <param name="dir">The direction where the Marker will be pointing to.</param>
+            <param name="rot">The rotation of the Marker.</param>
+            <param name="scale">The size of the Marker.</param>
+            <param name="red">The red color of the Marker.</param>
+            <param name="green">The green color of the Marker.</param>
+            <param name="blue">The blue color of the Marker.</param>
+            <param name="bobUpAndDown">Optional, defaults to false.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.GetMarkerBobUpAndDown(GTANetworkAPI.NetHandle)">
+            <summary>
+                Whether bobUpAndDown is active or not.
+            </summary>
+            <param name="marker">The Marker.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.GetMarkerColor(GTANetworkAPI.NetHandle)">
+            <summary>
+                Gets the Marker's <see cref="GTANetworkAPI.Color"/>.
+            </summary>
+            <param name="marker">The Marker.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.GetMarkerDirection(GTANetworkAPI.NetHandle)">
+            <summary>
+                Gets the direction the Marker is pointing at.
+            </summary>
+            <param name="marker">The Marker.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.GetMarkerScale(GTANetworkAPI.NetHandle)">
+            <summary>
+                Gets the size of the Marker.
+            </summary>
+            <param name="marker">The Marker.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.GetMarkerType(GTANetworkAPI.NetHandle)">
+            <summary>
+                Gets the type of the Marker.
+            </summary>
+            <param name="marker">The Marker.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.SetMarkerBobUpAndDown(GTANetworkAPI.NetHandle,System.Boolean)">
+            <summary>
+                Sets where the Marker should bob up and down.
+            </summary>
+            <param name="marker">The Marker.</param>
+            <param name="state">BobUpAndDown value.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.SetMarkerColor(GTANetworkAPI.NetHandle,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+                Sets the Marker's color.
+            </summary>
+            <param name="marker">The Marker.</param>
+            <param name="alpha">Alpha value.</param>
+            <param name="red">Red value.</param>
+            <param name="green">Green value.</param>
+            <param name="blue">Blue value.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.SetMarkerDirection(GTANetworkAPI.NetHandle,GTANetworkAPI.Vector3)">
+            <summary>
+                Sets the Marker's direction.
+            </summary>
+            <param name="marker">The Marker.</param>
+            <param name="dir">The direction vector it will be pointing at.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.SetMarkerScale(GTANetworkAPI.NetHandle,System.Single)">
+            <summary>
+                Sets the Marker's scale.
+            </summary>
+            <param name="marker">The Marker.</param>
+            <param name="scale">The size of the Marker.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.SetMarkerType(GTANetworkAPI.NetHandle,System.Int32)">
+            <summary>
+                Sets the Marker's type.
+            </summary>
+            <param name="marker">The Marker.</param>
+            <param name="type">The type of the Marker.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Marker.SetMarkerType(GTANetworkAPI.NetHandle,System.UInt32)">
+            <summary>
+                Sets the Marker's type.
+            </summary>
+            <param name="marker">The Marker.</param>
+            <param name="type">The type of the Marker.</param>
+        </member>
 
         <!-- Pickup -->
         <member name="T:GTANetworkAPI.Pickup">
