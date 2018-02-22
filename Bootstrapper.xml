@@ -292,136 +292,136 @@
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipColor(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's color and returns it as a int.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s color and returns it as a int.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipColor(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's color and returns it as a int.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s color and returns it as a int.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipName(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's name and returns it as a string.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s name and returns it as a string.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipPosition(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's position and returns it as a Vector3.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s position and returns it as a Vector3.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipRouteColor(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's Route Color and returns it as a int.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s Route Color and returns it as a int.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipRouteVisible(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's current route visibility and returns it as a bool.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s current route visibility and returns it as a bool.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipScale(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's scale and returns it as a float.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s scale and returns it as a float.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipShortRange(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's short range and returns it as a bool.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s short range and returns it as a bool.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipSprite(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's sprite and returns it as a uint.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s sprite and returns it as a uint.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipTransparency(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's current transparency and returns it as a int.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s current transparency and returns it as a int.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.GetBlipTransparency(GTANetworkAPI.NetHandle)">
             <summary>
-                Gets the given Blip's current transparency and returns it as a int.
+                Gets the given <see cref="GTANetworkAPI.Blip"/>'s current transparency and returns it as a int.
             </summary>
             <param name="blip">The Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipColor(GTANetworkAPI.NetHandle,System.Int32)">
             <summary>
-                Sets the given Blip's color based on the int you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s color based on the int you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="color">The Color of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipName(GTANetworkAPI.NetHandle,System.String)">
             <summary>
-                Sets the given Blip's name based on the string you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s name based on the string you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="name">The Name of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipPosition(GTANetworkAPI.NetHandle,GTANetworkAPI.Vector3)">
             <summary>
-                Sets the given Blip's position based on the Vector3 you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s position based on the Vector3 you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="newPos">The Position of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipRouteColor(GTANetworkAPI.NetHandle,System.Int32)">
             <summary>
-                Sets the given Blip's route color based on the int you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s route color based on the int you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="color">The Route Color of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipRouteVisible(GTANetworkAPI.NetHandle,System.Boolean)">
             <summary>
-                Sets the given Blip's visiblity based on the bool you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s visiblity based on the bool you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="visible">The Visiblity of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipScale(GTANetworkAPI.NetHandle,System.Single)">
             <summary>
-                Sets the given Blip's scale based on the float you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s scale based on the float you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="scale">The Scale of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipShortRange(GTANetworkAPI.NetHandle,System.Boolean)">
             <summary>
-                Sets the given Blip's short range based on the bool you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s short range based on the bool you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="range">The Short Range of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipSprite(GTANetworkAPI.NetHandle,System.Int32)">
             <summary>
-                Sets the given Blip's sprite based on the int you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s sprite based on the int you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="sprite">The Sprite of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipSprite(GTANetworkAPI.NetHandle,System.UInt32)">
             <summary>
-                Sets the given Blip's sprite based on the uint you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s sprite based on the uint you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="sprite">The Sprite of the Blip.</param>
         </member>
         <member name="M:GTANetworkMethods.Blip.SetBlipTransparency(GTANetworkAPI.NetHandle,System.Int32)">
             <summary>
-                Sets the given Blip's transparency based on the int you pass in.
+                Sets the given <see cref="GTANetworkAPI.Blip"/>'s transparency based on the int you pass in.
             </summary>
             <param name="blip">The Blip.</param>
             <param name="alpha">The Transparency of the Blip.</param>
@@ -608,13 +608,68 @@
             <param name="args">The arguments for the event you are triggering.</param>
         </member>
         <!-- Colshape Methods -->
-        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventToPlayers(GTANetworkAPI.Client[],System.String,System.Object[])">
+        <member name="M:GTANetworkMethods.ColShape.CreatCircleColShape(System.Single,System.Single,System.Single,System.UInt32)">
             <summary>
-                Triggers a client-side event for all of the given <see cref="GTANetworkAPI.Client"/>'s in the array.
+                Creates a <see cref="GTANetworkAPI.ColShape"/> at the given x and y with the passed in range.
             </summary>
-            <param name="players">An array of <see cref="GTANetworkAPI.Client"/>'s you want the event to trigger for.</param>
-            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
-            <param name="args">The arguments for the event you are triggering.</param>
+            <param name="x">The X coord where it will be place on the map.</param>
+            <param name="y">The Y coord where it will be place on the map.</param>
+            <param name="range">The radius of the <see cref="GTANetworkAPI.ColShape"/>'s circle.</param>
+            <param name="dimension">The dimension the <see cref="GTANetworkAPI.ColShape"/> will be placed in. The default is the Global Dimension</param>
+        </member>
+        <member name="M:GTANetworkMethods.ColShape.Create2DColShape(System.Single,System.Single,System.Single,System.Single,System.UInt32)">
+            <summary>
+                Creates a <see cref="GTANetworkAPI.ColShape"/> at the given x and y with the passed in height and width.
+                <para/>
+                This creates a rectangular area where the height is not a factor.
+            </summary>
+            <param name="x">The X coord where it will be place on the map.</param>
+            <param name="y">The Y coord where it will be place on the map.</param>
+            <param name="width">The width of the <see cref="GTANetworkAPI.ColShape"/>'s rectangle.</param>
+            <param name="height">The height of the <see cref="GTANetworkAPI.ColShape"/>'s rectangle.</param>
+            <param name="dimension">The dimension the <see cref="GTANetworkAPI.ColShape"/> will be placed in. The default is the Global Dimension</param>
+        </member>
+        <member name="M:GTANetworkMethods.ColShape.Create3DColShape(GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.UInt32)">
+            <summary>
+                Creates a <see cref="GTANetworkAPI.ColShape"/> at the given <see cref="GTANetworkAPI.Vector3"/> and ends at the other <see cref="GTANetworkAPI.Vector3"/>.
+                <para/>
+                This creates a rectangular area where the height is a factor.
+            </summary>
+            <param name="start">The <see cref="GTANetworkAPI.Vector3"/> where the start of the rectangle begins.</param>
+            <param name="end">The <see cref="GTANetworkAPI.Vector3"/> where the rectangle ends.</param>
+            <param name="dimension">The dimension the <see cref="GTANetworkAPI.ColShape"/> will be placed in. The default is the Global Dimension</param>
+        </member>
+        <member name="M:GTANetworkMethods.ColShape.CreateCylinderColShape(GTANetworkAPI.Vector3,System.Single,System.Single,System.UInt32)">
+            <summary>
+                Creates a <see cref="GTANetworkAPI.ColShape"/> at the given <see cref="GTANetworkAPI.Vector3"/>, this is where the center of the Cylinder will be placed.
+                <para/>
+                This creates a Cylinder where the height is a factor.
+            </summary>
+            <param name="position">The <see cref="GTANetworkAPI.Vector3"/> where the center of the Cylinder will be placed.</param>
+            <param name="range">The radius of the Cylinder's base.</param>
+            <param name="height">The height of the Cylinder.</param>
+            <param name="dimension">The dimension the <see cref="GTANetworkAPI.ColShape"/> will be placed in. The default is the Global Dimension</param>
+        </member>
+        <member name="M:GTANetworkMethods.ColShape.CreateSphereColShape(GTANetworkAPI.Vector3,System.Single,System.UInt32)">
+            <summary>
+                Creates a <see cref="GTANetworkAPI.ColShape"/> at the given <see cref="GTANetworkAPI.Vector3"/>, this is where the center of the Sphere will be placed.
+            </summary>
+            <param name="position">The <see cref="GTANetworkAPI.Vector3"/> where the center of the Sphere will be placed.</param>
+            <param name="range">The radius of the Sphere</param>
+            <param name="dimension">The dimension the <see cref="GTANetworkAPI.ColShape"/> will be placed in. The default is the Global Dimension</param>
+        </member>
+        <member name="M:GTANetworkMethods.ColShape.DeleteColShape(GTANetworkAPI.ColShape)">
+            <summary>
+                Deletes the passed in <see cref="GTANetworkAPI.ColShape"/>.
+            </summary>
+            <param name="shape">The <see cref="GTANetworkAPI.ColShape"/> that will be deleted.</param>
+        </member>
+        <member name="M:GTANetworkMethods.ColShape.IsPointWithinColshape(GTANetworkAPI.ColShape,GTANetworkAPI.Vector3)">
+            <summary>
+                Checks to see if the given <see cref="GTANetworkAPI.Vector3"/> is inside of the passed in <see cref="GTANetworkAPI.ColShape"/>.
+            </summary>
+            <param name="shape">The <see cref="GTANetworkAPI.ColShape"/> that will be referenced.</param>
+            <param name="point">The <see cref="GTANetworkAPI.Vector3"/> that will be check if it's inside of the ColShape.</param>
         </member>
 
         <!-- Entity -->
