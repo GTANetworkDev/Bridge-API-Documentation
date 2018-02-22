@@ -1074,6 +1074,63 @@
                 Returns whether this <see cref="GTANetworkAPI.Pickup"/> has been picked up or not.
             </summary>
         </member>
+        <member name="M:GTANetworkMethods.Pickup.CreatePickup(System.Int32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Boolean,System.UInt32,System.UInt32)">
+            <summary>
+                Creates a new Pickup.
+            </summary>
+            <param name="model">The Pickup model to be created.</param>
+            <param name="pos">The position where the Pickup will be created.</param>
+            <param name="rot">The rotation of the Pickup.</param>
+            <param name="vehicle">Whether the Pickup is a vehicle.</param>
+            <param name="respawnTime">The time in ms the Pickup takes to respawn.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Pickup.CreatePickup(GTANetworkAPI.PickupHash,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Int32,System.UInt32,System.UInt32)">
+            <summary>
+                Creates a new Pickup.
+            </summary>
+            <param name="pickupHash">The Pickup hash to be created.</param>
+            <param name="pos">The position where the Pickup will be created.</param>
+            <param name="rot">The rotation of the Pickup.</param>
+            <param name="amount">The amount given by the Pickup.</param>
+            <param name="respawnTime">The time in ms the Pickup takes to respawn.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Pickup.CreatePickup(System.UInt32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Boolean,System.UInt32,System.UInt32)">
+            <summary>
+                Creates a new Pickup.
+            </summary>
+            <param name="model">The Pickup model to be created.</param>
+            <param name="pos">The position where the Pickup will be created.</param>
+            <param name="rot">The rotation of the Pickup.</param>
+            <param name="vehicle">Whether the Pickup is a vehicle.</param>
+            <param name="respawnTime">The time in ms the Pickup takes to respawn.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Pickup.GetPickupAmount(GTANetworkAPI.NetHandle)">
+            <summary>
+                Gets the amount given by a Pickup.
+            </summary>
+            <param name="pickup">The Pickup.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Pickup.GetPickupCustomModel(GTANetworkAPI.NetHandle)">
+            <summary>
+                Gets the model of the Pickup.
+            </summary>
+            <param name="pickup">The Pickup.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Pickup.GetPickupPickedUp(GTANetworkAPI.NetHandle)">
+            <summary>
+                Whether the Pickup has been picked up.
+            </summary>
+            <param name="pickup">The Pickup.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Pickup.RespawnPickup(GTANetworkAPI.NetHandle)">
+            <summary>
+                Forces a Pickup to be respawned.
+            </summary>
+            <param name="pickup">The Pickup.</param>
+        </member>
 
         <!-- TextLabel -->
         <member name="T:GTANetworkAPI.TextLabel">
