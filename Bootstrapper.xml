@@ -200,7 +200,7 @@
             <param name="task"></param>
             <param name="delayTime">should be in ms (milliseconds)</param>
         </member>
-        <!-- ACL -->
+        <!-- ACL Methods -->
         <member name="M:GTANetworkMethods.ACL.DoesPlayerHaveAccessToCommand(GTANetworkAPI.Client,System.String)">
             <summary>
                 Returns a <see cref="System.Boolean"/> depending on if the given Client has access to the given Command.
@@ -238,7 +238,7 @@
             </summary>
             <param name="Client"></param>
         </member>
-        <!-- Blips -->
+        <!-- Blips Methods -->
         <member name="M:GTANetworkMethods.Blip.CreateBlip(GTANetworkAPI.NetHandle)">
             <summary>
                 Creates a <see cref="GTANetworkAPI.Blip"/> with the given <see cref="GTANetworkAPI.NetHandle"/>.
@@ -426,7 +426,7 @@
             <param name="blip">The Blip.</param>
             <param name="alpha">The Transparency of the Blip.</param>
         </member>
-        <!-- Chat -->
+        <!-- Chat Methods -->
         <member name="M:GTANetworkMethods.Chat.SendChatMessageToAll(System.String,System.Boolean)">
             <summary>
                 Sends a chat message to every player in the server.
@@ -459,7 +459,7 @@
             <param name="message">The Message.</param>
             <param name="oldColors">Optional, bool to use the old chat colors.</param>
         </member>
-        <!-- Checkpoints -->
+        <!-- Checkpoint Methods -->
         <member name="M:GTANetworkMethods.Checkpoint.CreateCheckpoint(GTANetworkAPI.CheckpointType,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Single,GTANetworkAPI.Color,System.UInt32)">
             <summary>
                 Creates a checkpoint with the given CheckpointType, Vector3 for the position, Vector3 for the direction, float for the scale, and Color for the color.
@@ -599,6 +599,15 @@
             <param name="eventName">The name of the event you want to trigger on the client-side.</param>
             <param name="args">The arguments for the event you are triggering.</param>
         </member>
+        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventToPlayers(GTANetworkAPI.Client[],System.String,System.Object[])">
+            <summary>
+                Triggers a client-side event for all of the given <see cref="GTANetworkAPI.Client"/>'s in the array.
+            </summary>
+            <param name="players">An array of <see cref="GTANetworkAPI.Client"/>'s you want the event to trigger for.</param>
+            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
+            <param name="args">The arguments for the event you are triggering.</param>
+        </member>
+        <!-- Colshape Methods -->
         <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventToPlayers(GTANetworkAPI.Client[],System.String,System.Object[])">
             <summary>
                 Triggers a client-side event for all of the given <see cref="GTANetworkAPI.Client"/>'s in the array.
