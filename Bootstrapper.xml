@@ -551,6 +551,62 @@
                 Gets or sets the scale of this <see cref="GTANetworkAPI.Checkpoint"/>.<para/>
             </summary>
         </member>
+        <!-- ClientEvent Methods -->
+        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEvent(GTANetworkAPI.Client,System.String,System.Object[])">
+            <summary>
+                Triggers a client-side event with the given <see cref="System.String"/> for the passed in <see cref="GTANetworkAPI.Client"/>.
+            </summary>
+            <param name="player">The Client.</param>
+            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
+            <param name="args">The arguments for the event you are triggering.</param>
+        </member>
+        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventForAll(System.String,System.Object[])">
+            <summary>
+                Triggers a client-side event for all of the <see cref="GTANetworkAPI.Client"/>'s in the server.
+            </summary>
+            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
+            <param name="args">The arguments for the event you are triggering.</param>
+        </member>
+        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventInDimension(System.UInt32,System.String,System.Object[])">
+            <summary>
+                Triggers a client-side event for all of the <see cref="GTANetworkAPI.Client"/>'s in the given dimension.
+                <para/>
+                This event is trigger on every client in the given dimension.
+            </summary>
+            <param name="dimension">The dimension you want to trigger the event in.</param>
+            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
+            <param name="args">The arguments for the event you are triggering.</param>
+        </member>
+        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventInRange(GTANetworkAPI.Vector3,System.Single,System.String,System.Object[])">
+            <summary>
+                Triggers a client-side event for all of the <see cref="GTANetworkAPI.Client"/>'s in the given range.
+                <para/>
+                This event is trigger on every client in the given range around the given <see cref="GTANetworkAPI.Vector3"/>.
+            </summary>
+            <param name="pos">The position you want to trigger the event at.</param>
+            <param name="range">The range of the event you want to trigger.</param>
+            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
+            <param name="args">The arguments for the event you are triggering.</param>
+        </member>
+        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventInRange(GTANetworkAPI.Vector3,System.Single,System.String,System.Object[])">
+            <summary>
+                Triggers a client-side event for all of the <see cref="GTANetworkAPI.Client"/>'s in the given range.
+                <para/>
+                This event is trigger on every client in the given range around the given <see cref="GTANetworkAPI.Vector3"/>.
+            </summary>
+            <param name="pos">The position you want to trigger the event at.</param>
+            <param name="range">The range of the event you want to trigger.</param>
+            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
+            <param name="args">The arguments for the event you are triggering.</param>
+        </member>
+        <member name="M:GTANetworkMethods.ClientEvent.TriggerClientEventToPlayers(GTANetworkAPI.Client[],System.String,System.Object[])">
+            <summary>
+                Triggers a client-side event for all of the given <see cref="GTANetworkAPI.Client"/>'s in the array.
+            </summary>
+            <param name="players">An array of <see cref="GTANetworkAPI.Client"/>'s you want the event to trigger for.</param>
+            <param name="eventName">The name of the event you want to trigger on the client-side.</param>
+            <param name="args">The arguments for the event you are triggering.</param>
+        </member>
 
         <!-- Entity -->
         <member name="T:GTANetworkAPI.Entity">
