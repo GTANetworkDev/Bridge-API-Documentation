@@ -3,7 +3,7 @@ This repository holds the XML file for **Bootstrapper.dll**. This [XML](./Bootst
 
 # Guide
 ### Members
-The Members element is a encapslating element that holds all of the members inside of it.
+The Members element is an encapsulating element that holds all of the members inside of it.
 ```xml
 <members>
   <member>
