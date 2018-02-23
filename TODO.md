@@ -38,7 +38,7 @@
 - [ ] Client
 - [ ] Object
 - [x] Ped
-- [ ] ColShape
+- [x] ColShape
 - [ ] Vector3
 ---
 #### Disclamer
