@@ -13,7 +13,7 @@
 - [x] Marker
 - [ ] Native
 - [ ] Notification
-- [ ] Object
+- [X] Object
 - [ ] Particle
 - [x] Ped 
 - [x] Pickup
@@ -23,9 +23,9 @@
 - [ ] Server
 - [x] Task
 - [x] TextLabel
-- [ ] Util
+- [x] Util
 - [ ] Vehicle
-- [ ] World
+- [x] World
 
 ### Properties
 - [x] Blip
@@ -36,9 +36,9 @@
 - [x] Entity
 - [x] Vehicle
 - [ ] Client
-- [ ] Object
-- [ ] Ped
-- [ ] ColShape
+- [x] Object
+- [x] Ped
+- [x] ColShape
 - [ ] Vector3
 ---
 #### Disclamer
