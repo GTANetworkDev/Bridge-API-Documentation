@@ -1459,5 +1459,87 @@
             </summary>
             <param name="weather">Weather's identifier.</param>
         </member>
+		
+		<!-- Util -->
+        <member name="M:GTANetworkMethods.Util.ConsoleOutput(System.String)">
+            <summary>
+				Prints a message on the server's console.
+            </summary>
+            <param name="text">The text to print.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.ConsoleOutput(System.String,System.Object[])">
+            <summary>
+				Prints a message on the server's console.
+            </summary>
+            <param name="text">The text to print.</param>
+            <param name="args">Extra arguments.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.FromJson(System.String)">
+            <summary>
+				Makes a dynamic object from a JSON string.
+            </summary>
+            <param name="json">The JSON string.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.FromJson<>(System.Object)">
+            <summary>
+				Makes an typed object from a JSON object.
+            </summary>
+            <param name="json">The JSON object.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.FromJson<>(System.String)">
+            <summary>
+				Makes an typed object from a JSON string.
+            </summary>
+            <param name="json">The JSON string.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.GetAllWeaponComponents(GTANetworkAPI.WeaponHash)">
+            <summary>
+				Gets the full list of components available for the given weapon.
+            </summary>
+            <param name="weapon">The hash of the weapon to get components from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.GetHashKey(System.String)">
+            <summary>
+				Gets the hash from the given string.
+            </summary>
+            <param name="input">The text to calculate the hash from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.GetHashSha256(System.String)">
+            <summary>
+				Gets the SHA256 hash from the given string.
+            </summary>
+            <param name="input">The text to calculate the SHA256 hash from.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.PedNameToModel(System.String)">
+            <summary>
+				Gets the numeric hash from the Ped's name.
+            </summary>
+            <param name="modelName">The Ped's model name.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.PickupNameToModel(System.String)">
+            <summary>
+				Gets the numeric hash from the Pickup's name.
+            </summary>
+            <param name="modelName">The Pickup's model name.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.ToJson(System.Object)">
+            <summary>
+				Converts the given object into a JSON type string.
+            </summary>
+            <param name="data">The object to convert to JSON string.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.VehicleNameToModel(System.String)">
+            <summary>
+				Gets the numeric hash from the Vehicle's name.
+            </summary>
+            <param name="modelName">The Vehicle's model name.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Util.WeaponNameToModel(System.String)">
+            <summary>
+				Gets the numeric hash from the Weapon's name.
+            </summary>
+            <param name="modelName">The Weapon's model name.</param>
+        </member>
+		
     </members>
 </doc>

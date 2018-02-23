@@ -23,7 +23,7 @@
 - [ ] Server
 - [x] Task
 - [x] TextLabel
-- [ ] Util
+- [x] Util
 - [ ] Vehicle
 - [x] World
 
