@@ -36,7 +36,7 @@
 - [x] Entity
 - [x] Vehicle
 - [ ] Client
-- [ ] Object
+- [x] Object
 - [x] Ped
 - [x] ColShape
 - [ ] Vector3
