@@ -25,7 +25,7 @@
 - [x] TextLabel
 - [ ] Util
 - [ ] Vehicle
-- [ ] World
+- [x] World
 
 ### Properties
 - [x] Blip
@@ -37,7 +37,7 @@
 - [x] Vehicle
 - [ ] Client
 - [ ] Object
-- [ ] Ped
+- [x] Ped
 - [ ] ColShape
 - [ ] Vector3
 ---

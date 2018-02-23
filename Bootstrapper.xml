@@ -1394,5 +1394,70 @@
             <param name="ped">The Ped playing the scenario.</param>
             <param name="scenario">The name of the scenario to play.</param>
         </member>
+		
+		<!-- World -->
+        <member name="M:GTANetworkMethods.World.DeleteWorldProp(System.Int32,GTANetworkAPI.Vector3,System.Single)">
+            <summary>
+				Deletes a world object in a range of the given position.
+            </summary>
+            <param name="modelHash">The object's model.</param>
+            <param name="position">The position to check for the object.</param>
+            <param name="radius">The radius within the object should be.</param>
+        </member>
+        <member name="M:GTANetworkMethods.World.DeleteWorldProp(System.UInt32,GTANetworkAPI.Vector3,System.Single)">
+            <summary>
+				Deletes a world object in a range of the given position.
+            </summary>
+            <param name="modelHash">The object's model.</param>
+            <param name="position">The position to check for the object.</param>
+            <param name="radius">The radius within the object should be.</param>
+        </member>
+        <member name="M:GTANetworkMethods.World.GetTime()">
+            <summary>
+				Gets server's time.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.World.GetWeather()">
+            <summary>
+				Gets current weather.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.World.RemoveIpl(System.String)">
+            <summary>
+				Unloads an IPL from the server.
+            </summary>
+            <param name="iplName">The name of the IPL to remove.</param>
+        </member>
+        <member name="M:GTANetworkMethods.World.RequestIpl(System.String)">
+            <summary>
+				Loads an IPL into the server.
+            </summary>
+            <param name="iplName">The name of the IPL to load.</param>
+        </member>
+        <member name="M:GTANetworkMethods.World.ResetIplList()">
+            <summary>
+				Resets all the IPL's loaded into the server.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.World.SetTime(System.Int32,System.Int32,System.Int32)">
+            <summary>
+				Sets the server's time.
+            </summary>
+            <param name="hours">Hours.</param>
+            <param name="minutes">Minutes.</param>
+            <param name="seconds">Seconds.</param>
+        </member>
+        <member name="M:GTANetworkMethods.World.SetWeather(System.String)">
+            <summary>
+				Sets the server's weather.
+            </summary>
+            <param name="weather">Weather's name.</param>
+        </member>
+        <member name="M:GTANetworkMethods.World.SetWeather(GTANetworkAPI.Weather)">
+            <summary>
+				Sets the server's weather.
+            </summary>
+            <param name="weather">Weather's identifier.</param>
+        </member>
     </members>
 </doc>
