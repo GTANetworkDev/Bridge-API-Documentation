@@ -1540,6 +1540,50 @@
             </summary>
             <param name="modelName">The Weapon's model name.</param>
         </member>
-		
+
+        <!-- Object -->
+        <member name="T:GTANetworkAPI.Object">
+            <summary>
+                The Object class.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.Object.CreateObject(System.Int32,GTANetworkAPI.Vector3,GTANetworkAPI.Quaternion,System.UInt32)">
+            <summary>
+				Creates a new game Object.
+            </summary>
+            <param name="model">The model of the Object to create.</param>
+            <param name="pos">The position in which the Object will be created.</param>
+            <param name="rot">The rotation of the Object.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Object.CreateObject(System.UInt32,GTANetworkAPI.Vector3,GTANetworkAPI.Quaternion,System.UInt32)">
+            <summary>
+				Creates a new game Object.
+            </summary>
+            <param name="model">The model of the Object to create.</param>
+            <param name="pos">The position in which the Object will be created.</param>
+            <param name="rot">The rotation of the Object.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Object.CreateObject(System.Int32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Byte,System.UInt32)">
+            <summary>
+				Creates a new game Object.
+            </summary>
+            <param name="model">The model of the Object to create.</param>
+            <param name="pos">The position in which the Object will be created.</param>
+            <param name="rot">The rotation of the Object.</param>
+            <param name="alpha">Optional, the opacity of the Object, defaults to opaque.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Object.CreateObject(System.UInt32,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Byte,System.UInt32)">
+            <summary>
+				Creates a new game Object.
+            </summary>
+            <param name="model">The model of the Object to create.</param>
+            <param name="pos">The position in which the Object will be created.</param>
+            <param name="rot">The rotation of the Object.</param>
+            <param name="alpha">Optional, the opacity of the Object, defaults to opaque.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
     </members>
 </doc>

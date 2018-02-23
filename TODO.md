@@ -13,7 +13,7 @@
 - [x] Marker
 - [ ] Native
 - [ ] Notification
-- [ ] Object
+- [X] Object
 - [ ] Particle
 - [x] Ped 
 - [x] Pickup
