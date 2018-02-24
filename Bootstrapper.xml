@@ -1668,5 +1668,10 @@
             <param name="sender">The name of the person sending the Notification.</param>
             <param name="subject">The title of the Notification.</param>
         </member>
+        <member name="T:GTANetworkAPI.RemainingTextAttribute"> 
+            <summary> 
+                Indicates that the command argument takes the rest of the input without parsing. 
+            </summary> 
+        </member> 
     </members>
 </doc>
