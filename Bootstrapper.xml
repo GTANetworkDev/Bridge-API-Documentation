@@ -1585,5 +1585,43 @@
             <param name="alpha">Optional, the opacity of the Object, defaults to opaque.</param>
             <param name="dimension">Optional, defaults to Global Dimension.</param>
         </member>
+		
+		<!-- Explosion -->
+        <member name="T:GTANetworkAPI.Explosion">
+            <summary>
+                The Explosion class.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.Explosion.CreateExplosion(GTANetworkAPI.ExplosionType,GTANetworkAPI.Vector3,System.Single,System.UInt32)">
+            <summary>
+				Creates a new Explosion.
+            </summary>
+            <param name="explosionType">The type of the Explosion to create.</param>
+            <param name="position">The position in which the Explosion will be created.</param>
+            <param name="damageScale">The multiplier of the Explosion's damage, defaults to 1.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Explosion.CreateOwnedExplosion(GTANetworkAPI.Client,GTANetworkAPI.ExplosionType,GTANetworkAPI.Vector3,System.Single,System.UInt32)">
+            <summary>
+				Creates a new Explosion owned by a <see cref="GTANetworkAPI.Client"/>.
+            </summary>
+            <param name="owner">The owner creating the Explosion.</param>
+            <param name="explosionType">The type of the Explosion to create.</param>
+            <param name="position">The position in which the Explosion will be created.</param>
+            <param name="damageScale">The multiplier of the Explosion's damage, defaults to 1.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Explosion.CreateOwnedProjectile(GTANetworkAPI.Client,GTANetworkAPI.Weapon,GTANetworkAPI.Vector3,GTANetworkAPI.Vector3,System.Int32,System.Single,System.UInt32)">
+            <summary>
+				Creates a new projectile for a weapon and having a <see cref="GTANetworkAPI.Client"/> as his owner.
+            </summary>
+            <param name="owner">The owner creating the projectile.</param>
+            <param name="weapon">The weapon hash indicating the type of the projectile.</param>
+            <param name="start">The starting position of the projectile.</param>
+            <param name="target">The target position of the projectile.</param>
+            <param name="damage">The amount of damage the projectile will cause.</param>
+            <param name="speed">The speed at which projectile advances, defaults to -1.</param>
+            <param name="dimension">Optional, defaults to Global Dimension.</param>
+        </member>
     </members>
 </doc>

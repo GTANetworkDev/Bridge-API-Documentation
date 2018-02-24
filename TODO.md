@@ -9,7 +9,7 @@
 - [x] ColShape
 - [ ] Data
 - [ ] Entity
-- [ ] Explosion
+- [x] Explosion
 - [x] Marker
 - [ ] Native
 - [ ] Notification
