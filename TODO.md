@@ -9,10 +9,10 @@
 - [x] ColShape
 - [ ] Data
 - [ ] Entity
-- [ ] Explosion
+- [x] Explosion
 - [x] Marker
 - [ ] Native
-- [ ] Notification
+- [x] Notification
 - [X] Object
 - [ ] Particle
 - [x] Ped 
