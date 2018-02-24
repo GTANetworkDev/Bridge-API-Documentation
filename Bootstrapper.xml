@@ -1623,5 +1623,50 @@
             <param name="speed">The speed at which projectile advances, defaults to -1.</param>
             <param name="dimension">Optional, defaults to Global Dimension.</param>
         </member>
+		
+		<!-- Notification -->
+        <member name="T:GTANetworkAPI.Notification">
+            <summary>
+                The Notification class.
+            </summary>
+        </member>
+        <member name="M:GTANetworkMethods.Notification.SendNotificationToAll(System.String,System.Boolean)">
+            <summary>
+				Creates and sends a Notification to all the players in the server.
+            </summary>
+            <param name="message">The message of the Notification to send.</param>
+            <param name="flashing">Whether the Notification will be flashing or not, defaults to false.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Notification.SendNotificationToPlayer(GTANetworkAPI.Client,System.String,System.Boolean)">
+            <summary>
+				Creates and sends a Notification to an specified player.
+            </summary>
+            <param name="player">The player receiving the Notification.</param>
+            <param name="message">The message of the Notification to send.</param>
+            <param name="flashing">Whether the Notification will be flashing or not, defaults to false.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Notification.SendPictureNotificationToAll(System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+				Creates and sends a Notification with a picture and some extra information to all the players in the server.
+            </summary>
+            <param name="body">The main message of the Notification.</param>
+            <param name="pic">The string of the game picture that will be sent in the Notification. See <a href="https://wiki.gtanet.work/index.php?title=Notification_Pictures"></param>
+            <param name="flash">Whether the Notification will be flashing or not, should be 0 or 1 values.</param>
+            <param name="iconType">The type of the icon attached into the Notification.</param>
+            <param name="sender">The name of the person sending the Notification.</param>
+            <param name="subject">The title of the Notification.</param>
+        </member>
+        <member name="M:GTANetworkMethods.Notification.SendPictureNotificationToAll(GTANetworkAPI.Client,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+				Creates and sends a Notification with a picture and some extra information to an specified player.
+            </summary>
+            <param name="player">The player receiving the Notification.</param>
+            <param name="body">The main message of the Notification.</param>
+            <param name="pic">The string of the game picture that will be sent in the Notification. See <a href="https://wiki.gtanet.work/index.php?title=Notification_Pictures"></param>
+            <param name="flash">Whether the Notification will be flashing or not, should be 0 or 1 values.</param>
+            <param name="iconType">The type of the icon attached into the Notification.</param>
+            <param name="sender">The name of the person sending the Notification.</param>
+            <param name="subject">The title of the Notification.</param>
+        </member>
     </members>
 </doc>
